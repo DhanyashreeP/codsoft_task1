@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color:aliceblue;
+}
+
+.sidenav {
+    width: 165px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 10px;
+    background: black;
+    box-shadow: 4px 2px 9px 2px red;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+  
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: blanchedalmond;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: yellow;
+}
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        background: black;
+        box-shadow: 4px 2px 9px 2px red;
+        padding: 8px 0;
+        z-index: 1;
+    }
+    
+    .sidenav a {
+        display: inline-block;
+        font-size: 18px;
+    }
+}
+h1{
+    font-size: 75px;
+   /* margin-top: 60px;*/
+    text-align: center;
+    font-family: "Audiowide",sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom:15px;
+}
+.main-img{
+    border-radius: 30px;
+    box-shadow: 4px 2px 9px 2px red;
+    width:450px;
+    height:450px;
+    margin-top: 20px;
+}
+.image-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+figcaption{
+    display:block;
+    text-align: center;
+    margin-bottom:15px;
+    font-size: 30px;
+    font-family: "Audiowide",sans-serif;
+}
+.intro{
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+    width:50%;
+    font-size: 20px;
+    margin:auto;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+    main{
+        padding-top:20px;
+        margin-top:60px;
+    }
+    #home h1 {
+        font-size: 48px; 
+        margin-top: 20px; 
+    }
+
+    .main-img {
+        max-width: 100%;
+        width: 80%;
+        height: auto;
+        margin: 20px auto; 
+        display: block;
+    }
+
+    figcaption {
+        font-size: 20px;
+    }
+
+    .intro {
+        font-size: 20px;
+        width: 80%; 
+        margin: auto;
+        margin-bottom: 10px; 
+    }
+}
+
+.gallery-container{
+    text-align: center;
+    margin-left:150px;
+    margin-right: 150px;
+    margin-bottom: 15px;
+    margin-top:15px;
+
+}
+.gallery-img{
+    border-radius: 30px;
+    box-shadow: 4px 2px 9px 2px red;
+    margin:10px;
+    width: 270px;
+    height:450px;
+    transition: transform .9s;
+}
+.gallery-img:hover{
+    transform:scale(1.05);
+}
+@media screen and (max-width: 768px) {
+    .gallery-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .gallery-img {
+        max-width: 100%;
+        width: 200px;
+        height: 250px;
+    }
+}
+.quotes-box{
+    text-align: center;
+    box-shadow: 4px 2px 9px 2px red;
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 55px;  /*25px*/
+    width:50%;
+    
+}
+.quotelines{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    padding:25px;
+    box-shadow: 4px 2px 9px 2px red;
+    margin:30px;
+}
+.more_quotes{
+    background-color: brown;
+    border: none;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.more_quotes a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.more_quotes:hover{
+    background-color: rgb(42, 74, 121);
+}
+@media screen and (max-width: 768px) {
+    .quotes-box {
+        width: 80%; 
+    }
+
+    .quotelines {
+        font-size: 18px;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .more_quotes {
+        padding: 15px 20px; 
+        font-size: 14px; 
+    }
+}
+.achievements-container{
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    width:50%;
+    margin:auto;
+}
+.achievements-container ul li{
+    margin:15px;
+}
+@media screen and (max-width: 768px) {
+    .achievements-container {
+        font-size: 20px; 
+        width: 80%; 
+    }
+
+    .achievements-container ul li {
+        margin: 10px;
+    }
+}
+
+footer{
+    margin-top:15px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: x-large;
+}
